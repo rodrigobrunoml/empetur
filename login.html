@@ -54,8 +54,8 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">NewUser</h6>
-                        <span>Access new user </span>
+                        <h6 class="mb-0">User</h6>
+                        <span>Access new user</span>
                     </div>
                 </div>
             </nav>
@@ -65,145 +65,51 @@
 
         <!-- Content Start -->
         <div class="content">
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light text-center rounded p-4">
-                    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
-                        <div class="panel panel-info" >
-                                <div class="panel-heading">
-                                    <div class="panel-title">Sign In</div>
-                                    <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
-                                </div>     
-            
-                                <div style="padding-top:30px" class="panel-body" >
-            
-                                    <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                                        
-                                    <form id="loginform" class="form-horizontal" role="form">
-                                                
-                                        <div style="margin-bottom: 25px" class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
-                                                </div>
-                                            
-                                        <div style="margin-bottom: 25px" class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                                                </div>
-                                                
-            
-                                            
-                                        <div class="input-group">
-                                                    <div class="checkbox">
-                                                    <label>
-                                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                                    </label>
-                                                    </div>
-                                                </div>
-            
-            
-                                            <div style="margin-top:10px" class="form-group">
-                                                <!-- Button -->
-            
-                                                <div class="col-sm-12 controls">
-                                                    <a id="btn-login" href="#" class="btn btn-success">Login  </a>
-                                                    <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
-            
-                                                </div>
-                                            </div>
-            
-            
-                                            <div class="form-group">
-                                                <div class="col-md-12 control">
-                                                    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                                        Don't have an account! 
-                                                    <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
-                                                        Sign Up Here
-                                                    </a>
-                                                    </div>
-                                                </div>
-                                            </div>    
-                                        </form>     
-            
-            
-            
-                                    </div>                     
-                                </div>  
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
                     </div>
-                    <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <div class="panel-title">Sign Up</div>
-                                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
-                            </div>  
-                            <div class="panel-body" >
-                                <form id="signupform" class="form-horizontal" role="form">
-                                    
-                                    <div id="signupalert" style="display:none" class="alert alert-danger">
-                                        <p>Error:</p>
-                                        <span></span>
-                                    </div>
-                                        
-                                    
-                                        
-                                    <div class="form-group">
-                                        <label for="email" class="col-md-3 control-label">Email</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="email" placeholder="Email Address">
-                                        </div>
-                                    </div>
-                                        
-                                    <div class="form-group">
-                                        <label for="firstname" class="col-md-3 control-label">First Name</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="firstname" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lastname" class="col-md-3 control-label">Last Name</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="lastname" placeholder="Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password" class="col-md-3 control-label">Password</label>
-                                        <div class="col-md-9">
-                                            <input type="password" class="form-control" name="passwd" placeholder="Password">
-                                        </div>
-                                    </div>
-                                        
-                                    <div class="form-group">
-                                        <label for="icode" class="col-md-3 control-label">Invitation Code</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" name="icode" placeholder="">
-                                        </div>
-                                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
 
-                                    <div class="form-group">
-                                        <!-- Button -->                                        
-                                        <div class="col-md-offset-3 col-md-9">
-                                            <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
-                                            <span style="margin-left:8px;">or</span>  
-                                        </div>
+
+            <!-- Form Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Sign In</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">User name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">xxxxxxxxx.
                                     </div>
-                                    
-                                    <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
-                                        
-                                        <div class="col-md-offset-3 col-md-9">
-                                            <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
-                                        </div>                                           
-                                            
-                                    </div>
-                                    
-                                    
-                                    
-                                </form>
-                            </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">xxxxxxxxxx</label>
+                                </div>
+                                <button type="submit" class="btn btn-success">Sign in</button>
+                            </form>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-            <!-- Widgets End -->
+            <!-- Form End -->
 
 
             <!-- Footer Start -->
@@ -216,8 +122,6 @@
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        </br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
                     </div>
                 </div>
