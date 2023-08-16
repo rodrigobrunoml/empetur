@@ -63,28 +63,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-bounding-box"></i>Cadastro</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Novo</a>
+                            <a href="#" class="dropdown-item" >Novo</a>
                         </div>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                            ...
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- End Modal-->
 
                 <!--
                     <div class="nav-item dropdown">
@@ -214,6 +195,7 @@
 
             <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
+            <!--
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3">
                         <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
@@ -252,6 +234,7 @@
                         </div>
                     </div>
                 </div>
+            -->    
             </div>
             <!-- Sale & Revenue End -->
 
@@ -291,6 +274,81 @@
                         <h6 class="mb-0">Usuários cadastrados no sistema</h6>
                         <a href="">Show All</a>
                     </div>
+                    <!-- Button trigger modal -->
+                    <div class="d-flex align-items-center mb-2">
+                        <button type="button" class="btn btn-success ms-1" data-bs-toggle="modal" data-bs-target="#novoModal">Novo</button>
+                    </div>
+                    <!-- End Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="novoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastra novo usuário</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="bg-light rounded-top p-4">
+                                        <div class="bg-light rounded h-100 p-1">
+                                            <div class="form-floating mb-2">
+                                                <input type="nome" class="form-control" id="floatingInput"
+                                                    placeholder="Nome completo">
+                                                <label for="floatingInput">Nome completo</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com">
+                                                <label for="floatingInput">E-mail</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <input type="login" class="form-control" id="floatingPassword"
+                                                    placeholder="Login">
+                                                <label for="floatingPassword">Login de acesso</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <input type="password" class="form-control" id="floatingPassword"
+                                                    placeholder="Password">
+                                                <label for="floatingPassword">Password</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <select class="form-select" id="permissao"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Selecione ...</option>
+                                                    <option value="1">Ativo</option>
+                                                    <option value="2">desativado</option>
+                                                </select>
+                                                <label for="floatingSelect">Permissão usuário</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <select class="form-select" id="grupo"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Selecione ...</option>
+                                                    <option value="1">Aprovador</option>
+                                                    <option value="2">Agente</option>
+                                                    <option value="3">Visualizador</option>
+                                                </select>
+                                                <label for="floatingSelect">Grupo usuário</label>
+                                            </div>
+                                            <!--
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here"
+                                                    id="floatingTextarea" style="height: 150px;"></textarea>
+                                                <label for="floatingTextarea">Comments</label>
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary">OK</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- End Modal -->
                     <div class="d-flex mb-2">
                         <input class="form-control bg-transparent" type="text" placeholder="Pesquisar usuário">
                         <button type="button" class="btn btn-primary ms-2"><i class="bi bi-search"></i></button>
