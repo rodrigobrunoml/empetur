@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Reserva</h3>
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Pauta</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <!--
@@ -305,27 +305,9 @@
                                                     <select class="form-select" id="TpEvento"
                                                         aria-label="Floating label select example">
                                                         <option selected>Selecione ...</option>
-                                                        <option value="1">Congresso</option>
-                                                        <option value="2">Convenção</option>
-                                                        <option value="3">Conferência</option>
-                                                        <option value="4">Curso</option>
-                                                        <option value="5">Confraternização</option>
-                                                        <option value="6">Desfile</option>
-                                                        <option value="7">Exposição</option>
-                                                        <option value="8">Encontro</option>
-                                                        <option value="9">Espetáculo</option>
-                                                        <option value="10">Feira</option>
-                                                        <option value="11">Formatura</option>
-                                                        <option value="12">Festival</option>
-                                                        <option value="13">Lançamento</option>
-                                                        <option value="14">Mostra</option>
-                                                        <option value="15">Palestra</option>
-                                                        <option value="16">Reunião</option>
-                                                        <option value="17">Simpósio</option>
-                                                        <option value="18">Seminário</option>
-                                                        <option value="19">Salão</option>
-                                                        <option value="20">Workshoop</option>
-                                                        <option value="21">Outros</option>
+                                                        <option value="1">Aprovador</option>
+                                                        <option value="2">Agente</option>
+                                                        <option value="3">Visualizador</option>
                                                     </select>
                                                     <label for="floatingSelect">Tipo de Evento</label>
                                                 </div>
@@ -355,9 +337,9 @@
                                                     <label for="floatingInput">Data reserva</label>
                                                 </div>
                                                 <div class="col-md-4 form-floating mb-2">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="Usuário responsável">
-                                                    <label for="floatingInput">Usuário responsável</label>
+                                                    <input type="nome" class="form-control" id="floatingInput"
+                                                        placeholder="Nome responsável">
+                                                    <label for="floatingInput">Nome responsável</label>
                                                 </div>
                                                 <div class="col-md-4 form-floating mb-2">
                                                     <input type="nome" class="form-control" id="floatingInput"
@@ -365,129 +347,6 @@
                                                     <label for="floatingInput">Número do contrato</label>
                                                 </div>
                                             </div>
-                                            <div class="row g-3 mb-2">
-                                                <div class="col-md-4 form-floating mb-2">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="Responsável">
-                                                    <label for="floatingInput">Responsável</label>
-                                                </div>
-                                                <div class="col-md-4 form-floating mb-2">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="Cliente">
-                                                    <label for="floatingInput">Cliente</label>
-                                                </div>
-                                                <div class="col-md-4 form-floating mb-2">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="Orçamento">
-                                                    <label for="floatingInput">Orçamento</label>
-                                                </div>
-                                            </div>
-                                            <!-- TABELA DISPONIVEL RESERVA -->
-                                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                                <h6 class="mb-0">Área Disponivel</h6>
-                                            </div>
-                                            <div class="table-responsive mb-2">
-                                                <table class="table text-start align-middle table-bordered table-hover mb-0">
-                                                    <thead>
-                                                        <tr class="text-dark">
-                                                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                                            <th scope="col">Área</th>
-                                                            <th scope="col">Opção</th>
-                                                            <th scope="col">QTDE</th>
-                                                            <th scope="col">Preço</th>
-                                                            <th scope="col">Data</th>
-                                                            <th scope="col">Turno</th>
-                                                            <th scope="col">Hr Início</th>
-                                                            <th scope="col">Hr Fim</th>
-                                                            <th scope="col">Observação</th>
-                                                            <th scope="col">Ação</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox"></td>
-                                                            <td>01 Jan 2045</td>
-                                                            <td>INV-0123</td>
-                                                            <td>Jhon Doe</td>
-                                                            <td>$123</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>
-                                                                <a class="btn btn-sm btn-primary" href=""><i class="bi bi-info-square"></i></a>
-                                                                <a class="btn btn-sm btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox"></td>
-                                                            <td>01 Jan 2045</td>
-                                                            <td>INV-0123</td>
-                                                            <td>Jhon Doe</td>
-                                                            <td>$123</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>
-                                                                <a class="btn btn-sm btn-primary" href=""><i class="bi bi-info-square"></i></a>
-                                                                <a class="btn btn-sm btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox"></td>
-                                                            <td>01 Jan 2045</td>
-                                                            <td>INV-0123</td>
-                                                            <td>Jhon Doe</td>
-                                                            <td>$123</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>
-                                                                <a class="btn btn-sm btn-primary" href=""><i class="bi bi-info-square"></i></a>
-                                                                <a class="btn btn-sm btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox"></td>
-                                                            <td>01 Jan 2045</td>
-                                                            <td>INV-0123</td>
-                                                            <td>Jhon Doe</td>
-                                                            <td>$123</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>
-                                                                <a class="btn btn-sm btn-primary" href=""><i class="bi bi-info-square"></i></a>
-                                                                <a class="btn btn-sm btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input class="form-check-input" type="checkbox"></td>
-                                                            <td>01 Jan 2045</td>
-                                                            <td>INV-0123</td>
-                                                            <td>Jhon Doe</td>
-                                                            <td>$123</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>Paid</td>
-                                                            <td>
-                                                                <a class="btn btn-sm btn-primary" href=""><i class="bi bi-info-square"></i></a>
-                                                                <a class="btn btn-sm btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- END TABELA DISPONIVEL RESERVA -->
                                             <!--
                                             <div class="form-floating">
                                                 <textarea class="form-control" placeholder="Leave a comment here"
@@ -501,7 +360,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                              <button type="button" class="btn btn-primary">Salvar</button>
+                              <button type="button" class="btn btn-primary">OK</button>
                             </div>
                           </div>
                         </div>
